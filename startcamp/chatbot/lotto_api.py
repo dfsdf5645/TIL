@@ -17,3 +17,37 @@ print('당첨번호는',r['drwtNo1'],r['drwtNo2'],r['drwtNo3'],r['drwtNo4'],r['d
 
 list = [r['drwtNo1'],r['drwtNo2'],r['drwtNo3'],r['drwtNo4'],r['drwtNo5'],r['drwtNo6']]
 print('당첨번호는',list,'입니다.')
+
+# num = lst(range(1,7))
+# int(num)
+# for i in num:
+#     print(response[f'drwtNo{i}']) >>> 나중에 다시 해보기
+
+
+x = 0
+mine = []
+while x < 6:
+    mine.append(random.choice(numbers))
+    print(mine)
+    x = x + 1
+
+import requests
+r = requests.get(f'https://www.dhlottery.co.kr/common.do?method=getLottoNumber&drwNo=1049').json()
+
+lotto = [r['drwtNo1'],r['drwtNo2'],r['drwtNo3'],r['drwtNo4'],r['drwtNo5'],r['drwtNo6']]
+
+k = 0
+for i in mine:
+    if i in lotto:
+        k = k+1
+
+if k == 5:
+    print("3등")
+elif k == 4:
+    print("4등")
+elif k == 3:
+    print("5등")
+else:
+    print("꽝")
+
+    
