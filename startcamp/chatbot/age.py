@@ -14,3 +14,4 @@ print(menu)
 print(menu[0][1])
 print(menu[1]['서대문구'])
 print(std['서대문구']['하하'][1])
+
