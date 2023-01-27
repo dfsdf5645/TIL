@@ -10,8 +10,14 @@
 
 def de_identify(reg_num):
     old = reg_num[6:]
+    # result = reg_num.replace('-','')
+    # result[6:] = ['*']*7
+    # return ''.join(result)
     new = reg_num.replace(old, '*******')
     return new
 
 print(de_identify('970103-1234567'))
 print(de_identify('8611232345678'))
+
+
+# 메서드 사용

@@ -8,3 +8,12 @@ for tuple in grain_lst:
     new.append(tuple[1])
 new.sort()
 print(new[-1])
+
+# grain_dict = dict(grain_lst)
+# key = list(grain_dict.keys())
+# value = list(grain_dict.values())
+# max_value = max(value)
+# print(value.index(max_value))
+
+# max_idx = value.index(max_value)
+# print(key[max_idx])
