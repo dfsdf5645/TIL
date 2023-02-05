@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff2601b4-ef02-4a6d-9913-b5c03fcc8e0f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/1208_flatten/sol.py" beforeDir="false" afterPath="$PROJECT_DIR$/1208_flatten/sol.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4834_cards/sol.py" beforeDir="false" afterPath="$PROJECT_DIR$/4834_cards/sol.py" afterDir="false" />
-    </list>
+    <list default="true" id="ff2601b4-ef02-4a6d-9913-b5c03fcc8e0f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,7 +28,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/lgy46/Desktop/TIL/algorithm/01_List_Part_02"
+    "last_opened_file_path": "C:/Users/lgy46/Desktop/TIL/algorithm"
   }
 }]]></component>
   <component name="RunManager" selected="Python.sol">
