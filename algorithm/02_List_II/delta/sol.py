@@ -5,8 +5,8 @@ sys.stdin = open('input.txt')
 T = int(input())
 
 # 델타검색 상, 하, 좌, 우
-dx = [-1, 1, 0, 0]
-dy = [0, 0, -1, 1]
+dx = [1, 0, -1, 0]
+dy = [0, 1, 0, -1]
 
 def search(x, y, N):
     cnt = 0
