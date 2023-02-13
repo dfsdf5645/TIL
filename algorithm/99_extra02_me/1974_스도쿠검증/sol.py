@@ -1,9 +1,6 @@
 import sys
 sys.stdin = open('input.txt')
 
-#사람의 방법 쓰지마라
-#cpu라 생각하고써라
-
 def solve(arr):
     #행을 체크
     for lst in arr:             #헹을 체크
@@ -25,7 +22,7 @@ def solve(arr):
 
 T = int(input())
 for tc in range(1, T+1):
-    arr = [list[map(int, input().split())) for _ in range(N)]
+    arr = [list(map(int, input().split())) for _ in range(9)]
     ans = solve(arr)
 
-
+    print(f'#{tc} {ans}')
