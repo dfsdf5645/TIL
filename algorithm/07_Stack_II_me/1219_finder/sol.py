@@ -1,6 +1,21 @@
 import sys
 sys.stdin = open('input.txt')
 
+#일자로 숫자 주어짐
+'''
+V, E = map(int, input().split())
+arr = list(map(int, input().split())
+adj = [[0]*(V+1) for _ in range(V+1)]
+adjv = [[] for _ in range(V+1)]
+for i in range(E):
+    v1, v2 = arr[i*2], arr[i*2+1]
+    adj[v1][v2] = 1
+    adj[v2][v1] = 1
+    
+    adjv[v1].append(v2)
+    adjv[v2].append(v1)
+'''
+
 def DFS(start):
     visited[start] = 1 #첫위치는 무조건 갓다고 찍어줘야하니 1
     stack = [start]

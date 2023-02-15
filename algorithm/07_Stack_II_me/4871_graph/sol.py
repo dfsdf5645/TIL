@@ -1,6 +1,7 @@
 import sys
 sys.stdin = open('sample_input.txt')
 
+
 def DFS(start):
     #첫 시작위치 이아무튼 방문함
     visited[start] = 1
