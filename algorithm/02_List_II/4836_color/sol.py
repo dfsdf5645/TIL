@@ -12,8 +12,8 @@ for tc in range(1, T+1):
         for x in range(r1, r2+1):
             for y in range(c1, c2+1):
                 matrix[x][y] += c
-
                 if matrix[x][y] == 3:
+
                     result += 1
 
     print(f'#{tc} {result}')

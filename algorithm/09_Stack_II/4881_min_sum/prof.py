@@ -1,7 +1,5 @@
 import sys
 sys.stdin = open('sample_input.txt')
-from itertools import permutations
-from pprint import pprint
 
 # 한줄에서 한개씩, 전체합
 def search(col, cnt):
