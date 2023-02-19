@@ -1,17 +1,16 @@
-bracket = input()
+word = input()
 stack = []
 result = 1
-for char in bracket:
+for char in word:
     if char == '(':
         stack.append(char)
-    else:
+    elif char == ')':
         if stack:
             stack.pop()
         else:
             result = -1
             break
+
 else:
     if stack:
-        # print(stack)
         result = -1
-print(result)

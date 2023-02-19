@@ -7,8 +7,23 @@ for tc in range(1, T+1):
     result = 1
     stack = []
     for char in word:
-        if char == '(' or '{':
+        if char in '({':
             stack.append(char)
         else:
-            if char == ')' or '}':
-                stack.pop()
+            if char == ')':
+                if not stack or stack[-1] != '(':
+                    result = 0
+                    break
+                else:
+                    stack.pop()
+            elif char == '}':
+                if not stack or stack[-1] != '{':
+                    result = 0
+                    break
+                else:
+                    stack.pop()
+    else:
+        if stack:
+            result = 0
+
+    print(result)

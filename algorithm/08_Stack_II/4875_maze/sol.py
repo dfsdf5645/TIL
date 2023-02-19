@@ -18,12 +18,32 @@ for tc in range(1, T+1):
     dx = [1, 0, -1, 0]
     dy = [0, 1, 0, -1]
 
+    v = []
     for i in range(N):
         for j in range(N):
             if maze[i][j] == 2:
                 x = i
                 y = j
+    print(x, y)
 
+    for j in range(4):
+        nx = x + dx[j]
+        ny = y + dy[j]
+
+        if 0 <= nx < N and 0 <= ny < N:
+            while maze[nx][ny] == 0 and maze[nx][ny] not in v:
+                v.append((x, y))
+                maze[nx][ny] = 1
+                print(maze[nx][ny])
+                x = nx
+                y = ny
+            if maze[nx][ny] == 3:
+                print(1)
+                break
+            if maze[nx][ny] == 1:
+                continue
+
+            print(0)
 
 
 
