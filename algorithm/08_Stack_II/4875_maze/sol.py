@@ -13,7 +13,7 @@ T = int(input())
 for tc in range(1, T+1):
     N = int(input())
     maze = [list(map(int, input())) for _ in range(N)]  #split 없어야...
-    print(maze)
+    # print(maze)
 
     dx = [1, 0, -1, 0]
     dy = [0, 1, 0, -1]
@@ -24,7 +24,7 @@ for tc in range(1, T+1):
             if maze[i][j] == 2:
                 x = i
                 y = j
-    print(x, y)
+    # print(x, y)
 
     for j in range(4):
         nx = x + dx[j]

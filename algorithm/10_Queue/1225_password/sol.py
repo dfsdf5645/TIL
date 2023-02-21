@@ -17,7 +17,10 @@ def untilzero(lst):
 for t in range(1, 11):
     tc = int(input())
     pw = list(map(int, input().split()))
-    print(f'#{tc} {untilzero(pw)}')
+
+
+    print(f'#{tc}', end=' ')
+    print(*untilzero(pw))
 
     # goal = pw[-1]
     # print(pw)

@@ -10,7 +10,7 @@ def search(x, y):
     for i in range(4):
         nx = x + dx[i]
         ny = y + dy[i]
-        if 0 <= nx < N and 0 <= ny < N and maze[nx][ny] != 1 and visited[nx][ny] != q:
+        if 0 <= nx < N and 0 <= ny < N and maze[nx][ny] != 1 and visited[nx][ny] != 1:
             if maze[nx][ny] == 3:
                 visited[nx][ny] = 1
                 s, e = nx, ny
@@ -24,7 +24,7 @@ for tc in range(1, T+1):
     maze = [list(map(int, input())) for _ in range(N)]  #split 없어야...
     visited = [[0]*N for i in range(N)]
     x, y = 0, 0
-    for i in range(N)
+    for i in range(N):
         for j in range(N):
             if maze[i][j] == 2:
                 search(i, j)
