@@ -12,6 +12,7 @@ def enq(n):
         c = p       #옮긴자리에서 부모와 비교하기 위해
         p = c//2
     return
+#최소힙이면 부등호만 바꿔주면됨
 
 def deq():
     global last
