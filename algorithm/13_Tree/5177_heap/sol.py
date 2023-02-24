@@ -18,7 +18,7 @@ for tc in range(1, T+1):
     N = int(input())
     nums = list(map(int, input().split()))
     # print(nums)
-    heap = [0] * (len(nums)+1)
+    heap = [0] * (N+1)
     # for i in range(N):
     #     heap[i+1] = nums[i]
 
@@ -27,6 +27,14 @@ for tc in range(1, T+1):
 
     for num in nums:
         enq(num)
+
+    # for i in range(1, N+1):
+    #     heap[i] = nums[i-1]
+    #     while i >= 2: #1번 노드가 현재 위치가 될 때까지
+    #         p = i//2
+    #         if heap[i] <= tree[p]:
+    #             heap[i], heap[p] = heap[p], heap[i]
+    #         i = i // 2
 
     print(heap)
     # print(heap[N])

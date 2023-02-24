@@ -8,6 +8,11 @@ def make_tree(n):
         # print(heap[n])
         n -= 1
 
+    #while N != L:
+        #p = N//2
+        #tree[p] += tree[N]
+        #N -= 1
+    #print(tree)
 
 T = int(input())
 for tc in range(1, T+1):
