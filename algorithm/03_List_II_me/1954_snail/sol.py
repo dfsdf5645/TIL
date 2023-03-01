@@ -75,7 +75,7 @@ def make_graph(n):
     dy = [1, 0, -1, 0]
     dir = 0
 
-    for i in range(n ** 2 - 1, 0, -1):
+    for i in range(1, n**2 + 1):
         nx = x + dx[dir]
         ny = y + dy[dir]
 
@@ -94,4 +94,4 @@ def make_graph(n):
 arr = make_graph(5)
 
 for i in arr:
-    print(i)
+    print(*i)
