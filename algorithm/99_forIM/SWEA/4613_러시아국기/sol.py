@@ -13,7 +13,7 @@ for tc in range(1,T+1):
     #1,2줄 w / 3줄 b / 4줄 r
     #모든 경우를 다 세는 거임 그냥
 
-    for i in range(N - 2):
+    for i in range(N - 2): #01
         pass
         for j in range(i + 1, N - 1):
             pass
