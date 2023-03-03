@@ -20,3 +20,6 @@ for tc in range(1, 11):
             b += str(n)         #문자열 만들어준담에
         ans += b.count('12')    #거기서 이제 '12'의 개수를 세줌(교착덩어리)
     print(f'#{tc} {ans}')
+
+    # for st in zip(*mag):
+    # ans += ''.join(st).replace('0','').count('12')
