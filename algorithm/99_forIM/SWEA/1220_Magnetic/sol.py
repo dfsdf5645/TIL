@@ -18,7 +18,7 @@ for tc in range(1, 11):
         b = ''
         for n in a:             #남은애들만 다
             b += str(n)         #문자열 만들어준담에
-        ans += b.count('12')    #거기서 이제 '12'의 개수를 세줌(교착덩어리)
+        ans += b.count('12')    #거기서 이제 '12'의 개수를 세줌
     print(f'#{tc} {ans}')
 
     # for st in zip(*mag):

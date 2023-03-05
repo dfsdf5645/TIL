@@ -15,7 +15,6 @@ for _ in range(10):
     while True:
         if y == 0:
             break
-
         if x > 0 and arr[y][x-1] == 1:
             while x > 0 and arr[y][x-1] == 1:
                 x -= 1
