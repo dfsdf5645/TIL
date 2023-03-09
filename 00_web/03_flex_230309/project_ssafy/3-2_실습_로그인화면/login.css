@@ -1,0 +1,81 @@
+* {
+  /* 기본설정 */
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  padding: 10px;
+}
+
+.header {
+  background-color: red;
+  border-radius: 2.2px;
+  color: white;
+  /* root 크기의 상대크기 rem */
+  font-size: 0.5rem;
+  height: 35px;
+  padding: 10px;
+}
+
+.login-title-text {
+  /* 상하 10px 좌우 0px */
+  margin: 10px 0px;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+
+}
+
+.form-check {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .login-form-title {
+  text-align: center;
+} */
+
+/* .login-form-title > p {
+  margin-bottom: 10px;
+} */
+
+.login-form {
+  margin-top: 10px;
+  border: 1px solid rgb(189, 189, 189);
+  border-radius: 2px;
+}
+
+.form > input {
+  height: 25px;
+  margin-bottom: 10px;
+}
+
+.form > input[type="submit"] {
+  margin-top: 10px;
+  height: 30px;
+  background-color: green;
+  border-radius: 5px;
+  border: 0px;
+  color: white;
+}
+
+.login-form-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  /* 아랫쪽에만 선 */
+  border-bottom: 2px solid blue;
+}
+
+.container {
+  width: 350px;
+  margin: auto;
+}

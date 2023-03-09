@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="container">
+    <!--경고창-->
+    <header class="header">
+      <!--경고창 본문이 들어갈 영역-->
+      <div class="alert">
+        <p class="alert-text">Invalid Login or password</p>
+      </div>
+    </header>
+
+    <!--로그인 폼-->
+    <section>
+      <!--로그인 제목-->
+      <div class="login-title">
+        <!--ssafy전용어쩌구-->
+        <h1 class="login-title-text">SSAFY 전용 Gitlab 시스템</h1>
+        <!--hr-->
+        <hr>
+      </div>
+      <!--로그인 입력창-->
+      <div class="login-form">
+        <!--로그인 입력창 제목-->
+        <div class="login-form-title">
+          <p>Sign in</p>
+        </div>
+        <!--로그인 입력칸-->
+        <form class="form" action="">
+          <label for="">Username or Email</label>
+          <input type="text">
+
+          <label for="">Password</label>
+          <input type="password">
+
+          <div class="form-check">
+            <!--따로 넣어주기만 해도 flex 영향 안받고 가로정렬됨, 
+              flex는 폼의 자식들에게만 영향줌-->
+            <div>
+              <!--하나의 요소로 또 봐줌-->
+              <input type="checkbox" name="" id="">
+              <label for="">Remember me</label>
+            </div>
+            <!--비밀번호 찾기-->
+            <a href="">Forgot your password?</a>
+          </div>
+
+          <!--제출버튼-->
+          <input type="submit" value="Sign in">
+
+        </form>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+.container {
+  background-color: #f4bcff;
+  height: 300px;
+  display: flex;
+  /* 교차축 align 기본이 stretch */
+  /* flex-start 젤윗부분부터 */
+  /* flex-end 아래부터 */
+  /* center 가운데 정렬!!!! 개자주씀 */
+  /* baseline 는 음 ... 글자 젤 밑선? 맞춰서 미세하게 달라짐*/
+  align-items: center;
+  justify-content: center;
+  /* content는 공간 배분 > align-content 여러줄일때 공간(여백) 배분 */
+}
+
+.item {
+  /* flex 주는순간 높이 전부 컨테이너에 맞춰짐 */
+  background-color: cadetblue;
+  border: 1px solid black;
+  font-size: 20px;
+  margin-right: 5px;
+
+}
+
+/* 순서 임의로 바꿈 */
+.order1 {
+  order: 1;
+}
+
+.order2 {
+  order: 2;
+}
+
+.order3 {
+  order: 3;
+}
+
+/* 창 늘릴때 어떤 비율로 늘릴지 */
+grow-1 {
+  flex-grow: 1;
+}
+
+grow-3 {
+  flex-grow: 3;
+}
+
+/* shrink도 같은방법 창줄일때 어떤 비율??*/

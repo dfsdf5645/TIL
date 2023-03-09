@@ -1,0 +1,15 @@
+.box1 {
+  width: 100px;
+  height: 100px;
+  background-color: #bbd0ff;
+  border: 1px solid black;
+}
+
+/* box1이랑 중복되니까 걍 html에 이름 box1 box2 하기 */
+.box2 {
+  background-color: #d8ff90;
+}
+
+.left {
+  float: left;
+}
