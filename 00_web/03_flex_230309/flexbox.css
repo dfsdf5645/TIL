@@ -1,0 +1,32 @@
+.container {
+  /* 컨테이너에 이거 하나만 넣으면 댐 */
+  display: flex;
+
+  /* 정렬기준 기본값 row */
+  /* row-reverse: 끝에서부터 반대로 쌓임 */
+  /* item에 넣으면 아무 동작 안함 */
+  /* 역방향의 경우 html 태그 선언순서와 시각적으로 다름 */
+  /* 코드는 12345 순이어도 보이는건 54321 */
+  /* flex-direction: row-reverse;  */
+
+  /* 창 줄일때,, 어케되는지 줄넘김 nowrap이 기본값 */
+  flex-wrap: nowrap;
+  /* wrap-reverse 좌우반전 */
+
+  /* justify는 메인축 기준, aign은 교차축 기준 */
+  /* flex-start 기본값 */
+  /* flex-end 위에 reverse랑 다른거임*/
+  /* space-between 아이템들 사이 공간 일정하게 */
+  /* space-around 아이템 둘러싼 .. 공간이 일정하게 유지 */
+  /* space-evenly 사이와 양옆?도 포함한 모든 공간 */
+  justify-content: space-between;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  background-color: #ffaad9;
+  margin-top: 20px;
+  margin-right: 20px;
+  font-size: 50px;
+}

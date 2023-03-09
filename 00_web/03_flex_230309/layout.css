@@ -1,0 +1,32 @@
+.header {
+  height: 100px;
+  background-color: aqua;
+}
+
+.section-left {
+  height: 500px;
+  background-color: #fbffc8;
+  width: 30%;
+}
+
+.section-right {
+  height: 500px;
+  background-color: #bdffc1;
+  width: 70%;
+}
+
+.footer {
+  height: 100px;
+  background-color: #ffc0c0;
+  /* float 끝난 바로 그 담 요소에다가 */
+  /* clear: both; 주면 normal flow 따름*/
+  clear: both;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
