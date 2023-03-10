@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <title>loginagain</title>
+  <link rel="stylesheet" href="new.css">
+</head>
+<body>
+  <div class="container">
+    <header class="align-middle bg-danger text-white fs-6 header">
+      <div class="alert text-center">
+        <p class="d-flex align-items-center alert-text">Invalid Login or password</p>
+      </div>
+    </header>
+
+    <section>
+      <!--로그인 제목-->
+      <div class="login-title">
+        <!--ssafy전용어쩌구-->
+        <h1 class="fw-bold login-title-text">SSAFY 전용 Gitlab 시스템</h1>
+        <!--hr-->
+        <hr>
+      </div>
+      <!--로그인 입력창-->
+      <div class="border border-2 login-form">
+        <!--로그인 입력창 제목-->
+        <div class="border-bottom border-3 border-primary login-form-title">
+          <p class="fw-bold fs-5 text-center">Sign in</p>
+        </div>
+
+        <form>
+          <div class="m-3 mb-4">
+            <label for="exampleInputEmail1" class="fw-bold form-label">Username or email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="m-3 mb-4">
+            <label for="exampleInputPassword1" class="fw-bold form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+
+          <div class="m-3 d-flex justify-content-between">
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="fw-bold form-check-label" for="exampleCheck1">Remember me</label>
+            </div>
+            <a class="" href="">Forgot your password?</a>
+          </div>
+
+          <div class="text-center">
+            <button type="submit" style="width: 90%" class="align-center m-3 btn btn-primary">Submit</button>
+          </div>
+        </form>
+
+      </div>
+    </section>
+
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!--p: 패딩-->
+  <div class="container p-3">
+    <!--이케하면 화면 늘려도 크기 고정-->
+    <div style="width: 700px">
+      <div class="alert bg-danger text-white">
+        Invalid user name or password
+      </div>
+
+      <header>
+        <h1 class="fw-bold my-3">SSAFY 전용 Gitlab 시스템</h1>
+        <hr class="border border-2 border-secondary">
+      </header>
+
+      <section>
+        <!--border-radius = rounded
+            rounded-top/bottom 위아래만 둥글게-->
+        <div class="p-3 border border-2 mt-3 text-center rounded-top border-bottom-0">
+          <!--p가 가진 기본값 마진 없애줘야 수직정렬됨!!!!!!! 이거 없음 위에처럼 간격 난리남-->
+          <p class="m-0 fs-3 fw-bold">Sign in</p>
+        </div>
+        
+        <!--위아래 선 없애주고나서 새로운 선 넣어주기 or 위에 <style>해서 바텀라인 만들어주고, 개발자도구 드가서 !important-->
+        <div class="border border-primary border-2"></div>
+
+        <!--전체 감싸는 form에 패딩주면 알아서 안으로 들어감-->
+        <form class="border border-2 p-3 fw-bold rounded-bottom border-bottom-0">
+          <div class="m-3 mb-4">
+            <label for="exampleInputEmail1" class="fw-bold form-label">Username or email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="m-3 mb-4">
+            <label for="exampleInputPassword1" class="fw-bold form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+
+          <div class="mb-3 d-flex justify-content-between">
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="fw-bold form-check-label" for="exampleCheck1">Remember me</label>
+            </div>
+            <!--기본값 밑줄인데 없애려면 text-decoration-none-->
+            <a class="text-decoration-none" href="">Forgot your password?</a>
+          </div>
+
+          <!--버튼에다 텍스트센터하면 글자만 중앙으로 감 박스전체가 가운데 영역으로 가야함-->
+          <div class="text-center">
+            <button type="submit" class="align-center m-3 btn btn-primary w-2">Submit</button>
+          </div>
+        </form>
+      </section>
+    </div>
+    <!--div 끝내는 위치 다시보기-->
+  </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+h1 {
+  /* 첫폰트없음 두번째꺼, ... 패밀리로 묶음 */
+  font-family: '짱이쁜폰트',Arial, Helvetica, sans-serif
+}
+
+/* 모든 유저 컴에 첫폰트가 안깔려잇을수도잇으니
+-> @font-face */
+@font-face {
+  font-family: '짱이쁜폰트';
+  src: url();
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+}

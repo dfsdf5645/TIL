@@ -11,6 +11,7 @@
   justify-content: center;
   /* content는 공간 배분 > align-content 여러줄일때 공간(여백) 배분 */
 }
+/* justify 가로줄 content남는 여백 배분 between 사이로  around 컨텐츠 주위로 */
 
 .item {
   /* flex 주는순간 높이 전부 컨테이너에 맞춰짐 */
