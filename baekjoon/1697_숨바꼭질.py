@@ -7,6 +7,7 @@ def bfs(start):
     visited[start] = 1
     while q:
         start = q.pop(0)
+        print(start)
         if start == K:
             return visited[start] - 1
         for next in (start-1, start+1, start*2):
