@@ -8,25 +8,149 @@
   <title>carrot</title>
 </head>
 <body>
-  <div class="container">
-    <div class="row d-flex justify-content-between">
-      <div class="row header_left">
-        <img src="img/logo.png" width="1px", height="1px">
-        <div class="col-1">중고거래</div>
-        <div class="col-1">동네가게</div>
-        <div class="col-1">알바</div>
-        <div class="col-1">부동산직거래</div>
-        <div class="col-1">중고차직거래</div>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <a href="http://www.naver.com">
+      <img class="mx-4" src="img/logo.png" width="90px" height="25px">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">메뉴</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
-      <div class="row search"> 
-        <input class="col-1" type="text" placeholder="물품이나 동네를 검색해보세요">
-        <!-- <div class="col-1 form-floating">
-          <textarea class="col-1 form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-          <label for="floatingTextarea">물품이나 동네를 검색해보세요</label>
-        </div> -->
-        <button type="button" class="col-1 btn btn-primary position-relative">채팅하기</button>
-      </div> 
+      <div class="d-flex flex-wrap justify-content-lg-between offcanvas-body">
+
+        <div class="d-flex align-items-lg-center">
+          <ul class="navbar-nav flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a style="color: orange" class="fw-bold nav-link active" aria-current="page" href="#">중고거래</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">동네가게</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">알바</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">부동산직거래</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">중고차직거래</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="d-flex mx-2 p-2">
+          <form class="d-flex align-items-center" role="search">
+            <input style="width: 250px" class="form-control me-2" type="search" placeholder="물품이나 동네를 검색해보세요" aria-label="Search">
+            <button style="width: 80px" class="btn btn-outline-dark" type="submit">채팅하기</button>
+          </form>
+        </div>
+
+      </div>
     </div>
+    </div>
+  </nav>
+
+  <section class="mt-5 container">
+    <!---
+    <header class="mb-3 d-flex justify-content-between">
+      <div class="m-3 d-flex justify-content-between align-items-center header_left">
+        <img class=mx-2 src="img/logo.png" width="70px" height="20px">
+        <div style="color: orange;" class="mx-2 fw-bold">중고거래</div>
+        <div class="mx-2">동네가게</div>
+        <div class="mx-2">알바</div>
+        <div class="mx-2">부동산직거래</div>
+        <div class="mx-2">중고차직거래</div>
+      </div>
+      <div class="m-5 d-flex justify-content-between search"> 
+        <input type="text" style="width:230px" class="mx-2" placeholder="물품이나 동네를 검색해보세요">
+        <button type="button" class="mx-2 btn btn-primary position-relative">채팅하기</button>
+      </div> 
+    </header>
+    -->
+    <section class="pt-2">
+      <section class="border border-1 m-5 p-5">
+        <p class="fw-bold fs-5 my-4 mx-5">중고거래</p>
+        <div class="flex-wrap d-flex justify-content-around">
+          <div class="p-3 m-3 product">
+            <img src="img/phone.jpeg" width="200px" height="200px">
+            <p class="fw-bold fs-5 m-0">SAMSUNG Galaxy S22</p>
+            <p style="color: grey; font-size: small" class="m-0 fs-9">서울 동대문구 이문동</p>
+            <p style="color: orange; font-size:large" class="m-0 fw-bold">230,000</p>
+          </div>
+          <div class="p-3 m-3 product">
+            <img src="img/phone.jpeg" width="200px" height="200px">
+            <p class="fw-bold fs-5 m-0">SAMSUNG Galaxy S22</p>
+            <p style="color: grey; font-size: small" class="m-0 fs-9">서울 동대문구 이문동</p>
+            <p style="color: orange; font-size:large" class="m-0 fw-bold">230,000</p>
+          </div>
+          <div class="p-3 m-3 product">
+            <img src="img/phone.jpeg" width="200px" height="200px">
+            <p class="fw-bold fs-5 m-0">SAMSUNG Galaxy S22</p>
+            <p style="color: grey; font-size: small" class="m-0 fs-9">서울 동대문구 이문동</p>
+            <p style="color: orange; font-size:large" class="m-0 fw-bold">230,000</p>
+          </div>
+          <div class="p-3 m-3 product">
+            <img src="img/phone.jpeg" width="200px" height="200px">
+            <p class="fw-bold fs-5 m-0">SAMSUNG Galaxy S22</p>
+            <p style="color: grey; font-size: small" class="m-0 fs-9">서울 동대문구 이문동</p>
+            <p style="color: orange; font-size:large" class="m-0 fw-bold">230,000</p>
+          </div>
+          <div class="p-3 m-3 product">
+            <img src="img/phone.jpeg" width="200px" height="200px">
+            <p class="fw-bold fs-5 m-0">SAMSUNG Galaxy S22</p>
+            <p style="color: grey; font-size: small" class="m-0 fs-9">서울 동대문구 이문동</p>
+            <p style="color: orange; font-size:large" class="m-0 fw-bold">230,000</p>
+          </div>
+          <div class="p-3 m-3 product">
+            <img src="img/phone.jpeg" width="200px" height="200px">
+            <p class="fw-bold fs-5 m-0">SAMSUNG Galaxy S22</p>
+            <p style="color: grey; font-size: small" class="m-0 fs-9">서울 동대문구 이문동</p>
+            <p style="color: orange; font-size:large" class="m-0 fw-bold">230,000</p>
+          </div>
+          <div class="p-3 m-3 product">
+            <img src="img/phone.jpeg" width="200px" height="200px">
+            <p class="fw-bold fs-5 m-0">SAMSUNG Galaxy S22</p>
+            <p style="color: grey; font-size: small" class="m-0 fs-9">서울 동대문구 이문동</p>
+            <p style="color: orange; font-size:large" class="m-0 fw-bold">230,000</p>
+          </div>
+          <div class="p-3 m-3 product">
+            <img src="img/phone.jpeg" width="200px" height="200px">
+            <p class="fw-bold fs-5 m-0">SAMSUNG Galaxy S22</p>
+            <p style="color: grey; font-size: small" class="m-0 fs-9">서울 동대문구 이문동</p>
+            <p style="color: orange; font-size:large" class="m-0 fw-bold">230,000</p>
+          </div>
+          <div class="p-3 m-3 product">
+            <img src="img/phone.jpeg" width="200px" height="200px">
+            <p class="fw-bold fs-5 m-0">SAMSUNG Galaxy S22</p>
+            <p style="color: grey; font-size: small" class="m-0 fs-9">서울 동대문구 이문동</p>
+            <p style="color: orange; font-size:large" class="m-0 fw-bold">230,000</p>
+          </div>
+          <div class="p-3 m-3 product">
+            <img src="img/phone.jpeg" width="200px" height="200px">
+            <p class="fw-bold fs-5 m-0">SAMSUNG Galaxy S22</p>
+            <p style="color: grey; font-size: small" class="m-0 fs-9">서울 동대문구 이문동</p>
+            <p style="color: orange; font-size:large" class="m-0 fw-bold">230,000</p>
+          </div>
+          <div class="p-3 m-3 product">
+            <img src="img/phone.jpeg" width="200px" height="200px">
+            <p class="fw-bold fs-5 m-0">SAMSUNG Galaxy S22</p>
+            <p style="color: grey; font-size: small" class="m-0 fs-9">서울 동대문구 이문동</p>
+            <p style="color: orange; font-size:large" class="m-0 fw-bold">230,000</p>
+          </div>
+          <div class="p-3 m-3 product">
+            <img src="img/phone.jpeg" width="200px" height="200px">
+            <p class="fw-bold fs-5 m-0">SAMSUNG Galaxy S22</p>
+            <p style="color: grey; font-size: small" class="m-0 fs-9">서울 동대문구 이문동</p>
+            <p style="color: orange; font-size:large" class="m-0 fw-bold">230,000</p>
+          </div>
+
+        </div>
+      </section>
+    </section>
   </div>
 
 
